@@ -1,3 +1,17 @@
+## Proiect facut in cursul din 26/09.2019
+
+Implementare Bootstrap in React:
+
+Dependente: "bootstrap": "^4.3.1", "react-bootstrap": "^1.0.0-beta.12"
+
+## npm install react-bootstrap bootstrap
+
+In App.js am implementat React Router.
+
+In NavigationBar.js am implementat un meniu Bootstrap la care am creat legaturile cu componentele "Home" si "About".
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

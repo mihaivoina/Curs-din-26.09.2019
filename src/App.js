@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
+// import Alert from 'react-bootstrap/Alert';
+// import AlertDismissibleExample from './Alert/Alert';
+import About from './About/About';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import NavigationBar from './NavigationBar/NavigationBar';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <Router>
+      <NavigationBar />
+      {/* <Alert dismissible variant="danger">
+        <Alert.Heading>Oh snap! You got an error!</Alert.Heading>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Change this and that and try again.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      </Alert>
+      <AlertDismissibleExample /> */}
+      <Route exact path="/" component={ () => <h2>Homepage</h2> } />
+      <Route  path="/about" component={ About } />
+
+    </Router>
+  )
 }
 
 export default App;
